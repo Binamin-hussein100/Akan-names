@@ -1,9 +1,10 @@
-h1 {
-    background-color: blue;
+body {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
 
-.introduction {
-    width: 100%;
+#column1 {
+    border: black solid;
     height: 50vh;
-    background-color: cadetblue;
 }
