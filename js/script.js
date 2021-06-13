@@ -31,17 +31,17 @@ function sex() {
     }
 }
 
-// function selectDay() {
-//     let selectedGender = sex;
-//     let getBirthday =birthday;
+function selectDay() {
+    let selectedGender = sex;
+    let getBirthday =birthday;
 
-//     if (dayOfTheWeek.valueOf()===true || (dayOfTheWeek == 0)) {
-//        if (selectedGender == 0) {
-//         let submit = "Your Akan name is " + maleNames[dayOfTheWeek] + ".";
-//         document.getElementById("submit").innerHTML = submit;
+    if (dayOfTheWeek.valueOf()===true || (dayOfTheWeek == 0)) {
+       if (selectedGender == 0) {
+        let submit = "Your Akan name is " + maleNames[dayOfTheWeek] + ".";
+        document.getElementById("submit").innerHTML = submit;
         
-//        }
-//     }
+       }
+    }
     else if(selectedGender == 1){
         let submit = "Your Akan name is " + femaleNames[dayOfTheWeek] + ".";
         document.getElementById("submit").innerHTML = submit;
