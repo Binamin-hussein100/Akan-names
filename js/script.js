@@ -11,9 +11,9 @@ function birthday(){
 
         return dayOfTheWeek
     }
-    else{
-        alert("PLEASE ENTER YOUR BIRTHDAY.")
-    }
+    // else{
+    //     alert("PLEASE ENTER YOUR BIRTHDAY.")
+    // }
 }
 
 function sex() {
