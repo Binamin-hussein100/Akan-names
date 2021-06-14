@@ -3,11 +3,13 @@ let femaleNames = ["AKOSUA","ADWOA","ABENNA","AKUA","YAA","AFUA","AMA"]
 
 function birthday(){
         let input = document.getElementById("D.O.B").value;
-        let date = new date(input)
-    
-    if(date.value()){
+        let date = new Date(input)
+
+        let days = ["sunday","monday","tuesday","wednesday","thursday","friday","saturday"]
+
+    if(date.value){
         let year = date.getFullYear().string();
-        let dayOfTheWeek= date.getDate();
+        let dayOfTheWeek= date.getDay();
 
         return dayOfTheWeek
     }
@@ -33,17 +35,17 @@ function sex() {
 
 function selectDay() {
     let selectedGender = sex;
-    let getBirthday =birthday;
+    let getBirthday = birthday;
 
-    if (dayOfTheWeek.valueOf()===true || (dayOfTheWeek == 0)) {
+    if (getBirthday.valueOf()===true || (getBirthday == 0)) {
        if (selectedGender == 0) {
-        let submit = "Your Akan name is " + maleNames[dayOfTheWeek] + ".";
+        let submit = "Your Akan name is " + maleNames[getBirthday] + ".";
         document.getElementById("submit").innerHTML = submit;
         
        }
     }
     else if(selectedGender == 1){
-        let submit = "Your Akan name is " + femaleNames[dayOfTheWeek] + ".";
+        let submit = "Your Akan name is " + femaleNames[getBirthday] + ".";
         document.getElementById("submit").innerHTML = submit;
         
     }
