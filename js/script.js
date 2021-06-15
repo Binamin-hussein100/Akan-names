@@ -52,10 +52,10 @@ if (getBirthday.valueOf() === true || (getBirthday === 0)) {
         let result = "Your Akan name is " + maleNames[getBirthday] + ".";
         document.getElementById("submit").innerHTML = result;
      }
-    //  else (selectedGender === 1){
-    //     let result = "Your Akan name is " + femaleNames[getBirthday] + ".";
-    //     document.getElementById("submit").innerHTML = result;
-    //  }
+     else if (selectedGender === 1) {
+        let result = "Your Akan name is " + femaleNames[getBirthday] + ".";
+        document.getElementById("submit").innerHTML = result;
+     }
 }
 
 }
